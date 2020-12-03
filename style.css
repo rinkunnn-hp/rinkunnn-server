@@ -1,0 +1,111 @@
+.header {
+height: 60px;
+background-color: #000000;
+}
+
+body {
+background-color: #ffffff;
+}
+
+hr {
+width: 60vw;
+font-size: 4px;
+height: 1px;
+background: #000000;
+}
+
+.header-logo {
+font-size: 30px;
+float: left;
+padding: 10px;
+color: red;
+}
+
+.header-logo-color {
+color: red;
+text-decoration: none;
+}
+
+.header-list-li {
+list-style: none;
+float: right;
+padding: 15px;
+}
+
+.header-list-color {
+color: #ffffff;
+font-size: 20px;
+text-decoration: none;
+}
+
+.main {
+font-size: 20px;
+  position: relative;
+}
+
+
+.main-logo {
+text-align: center;
+}
+
+.main-img1 {
+height: 350px;
+width: 98vw;
+object-fit: cover;
+}
+
+.main-bun {
+color: #808080;
+text-align:center;
+}
+
+.main-air1 {
+height: 40px;
+}
+
+.main-katudou {
+font-size: 40px;
+text-align: center;
+}
+
+.main-katudou-bun {
+color: #808080;
+text-align: center;
+}
+
+.main-katudou-img1 {
+  height: 500px;
+  width: 98vw;
+  object-fit: cover;
+}
+
+.main-osirase {
+font-size: 40px;
+text-align: center;
+}
+
+.main-osirase1-bun {
+text-align: center;
+color: #808080;
+}
+
+.main-bokin {
+font-size: 40px;
+text-align: center;
+}
+
+.main-bokin-bun {
+color: #808080;
+text-align: center;
+}
+
+.footer {
+height: 100px;
+background-color: #9de8ea;
+}
+
+.footer-e-mail {
+color: #808080;
+float: right;
+}
+
