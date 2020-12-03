@@ -1,0 +1,48 @@
+    .header {
+    height: 60px;
+    background-color: #000000;
+    }
+    
+    body {
+    background-color: #ffffff;
+    }
+
+    .main-air1 {
+    height: 40px;
+    }
+    
+    .header-logo {
+    font-size: 30px;
+    float: left;
+    padding: 10px;
+    color: red;
+    }
+    
+    .header-logo-color {
+    color: red;
+    text-decoration: none;
+    }
+    
+    .header-list-li {
+    list-style: none;
+    float: right;
+    padding: 15px;
+    }
+    
+    .header-list-color {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    }
+
+    .footer {
+    height: 100px;
+    width: 98vw;
+    background-color: #9de8ea;
+    float: left;
+    }
+       
+    .footer-e-mail {
+    color: #808080;
+    float: right;
+    }
