@@ -42,7 +42,7 @@
 			<script src="/assets/js/main.js"></script>
 <div class="main">
 
-<h1>掲示板</h1>
+<h1>掲示板だよ</h1>
 
 <form method="POST" action="<?php print($_SERVER['PHP_SELF']) ?>">
 <p>ニックネーム</p>
