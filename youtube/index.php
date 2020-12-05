@@ -20,16 +20,14 @@
 					</header>
 			</div>
 
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="/index.html">ホーム</a></li>
-					<li><a href="/お知らせ">お知らせ</a></li>
-					<li><a href="/web">自作便利サイト一覧</a></li>
-					<li><a href="/bot">自作DiscordのBOT</a></li>
-					<li><a href="/MC鯖参加受付">りん鯖！！</a></li>
-					<li><a href="/MCPE配布ワールド">マインクラフト統合版の配布ワールド</a></li>
-				</ul>
-			</nav>
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="/index.html">ホーム</a></li>
+							<li><a href="/youtube">Youtube DL</a></li>
+							<li><a href="/ダウンロードリンク作成">ダウンロードリンク作成</a></li>
+							<li><a href="/掲示板">掲示板</a></li>
+						</ul>
+					</nav>
 
 
 		<!-- Scripts -->
