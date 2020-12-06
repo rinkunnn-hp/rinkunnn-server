@@ -52,8 +52,8 @@
     <body>
       <p><?php
       if (is_uploaded_file($_FILES["upfile"]["tmp_name"])) {
-        if (move_uploaded_file($_FILES["upfile"]["tmp_name"], "/var/www/html/date/ダウンロードリンク作成/date/" . $_FILES["upfile"]["name"])) {
-          echo "完成しました。<br> 保存期間はあなたのファイル名と同じファイル名のファイルがアップロードされるまでです。<br><a href=/date/ダウンロードリンク作成/date/" . $_FILES["upfile"]["name"] . " download>あなたのダウンロードリンク</a>";
+        if (move_uploaded_file($_FILES["upfile"]["tmp_name"], "files/" . $_FILES["upfile"]["name"])) {
+          echo "完成しました。<br> 保存期間はあなたのファイル名と同じファイル名のファイルがアップロードされるまでです。<br><a href=./files/" . $_FILES["upfile"]["name"] . " download>あなたのダウンロードリンク</a>";
         } else {
           echo "ファイルをアップロードできません。";
         }
