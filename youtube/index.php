@@ -47,7 +47,7 @@
         if(isset($_POST["movie_l"])) {
 		exec("rm $name2.$name3");
 		exec("youtube-dl -f 22 --merge-output-format $name3 $name1 -o '$name2.$name3'");
-		echo"<video controls width="100"><source src=" . $name2.$name3 . "></video>";
+		header( "location: https://rinkunnn.ddo.jp/youtube/$name2.$name3");
 	}
 	if(isset($_POST["movie_d"])) {
                 exec("rm $name2.$name3");
