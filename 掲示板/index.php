@@ -60,7 +60,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 readData();
 
 function readData(){
-    $keijban_file = '/var/www/html/date/掲示板/date.txt';
+    $keijban_file = './date.txt';
 
     $fp = fopen($keijban_file, 'rb');
 
@@ -90,7 +90,7 @@ function writeData(){
     $data = $data."<p>内容:</p>";
     $data = $data."<p>".$contents."</p>";
 
-    $keijban_file = '/var/www/html/date/掲示板/date.txt';
+    $keijban_file = './date.txt';
 
     $fp = fopen($keijban_file, 'ab');
 
