@@ -79,6 +79,7 @@
 ?>
 
 <form action="index.php" method="POST">
+	<h1>YouTubeダウンローダー</h1>
 	<p>YouTubeのURL：<input type="text" name="user_name"></p>
 	<p>ファイル名の指定 日本語・空白非対応：<input type="text" name="password" value="youtube_movie"></p>
 	<p>動画の拡張子の指定：<input type="text" name="video_k" value="mp4"></p>
