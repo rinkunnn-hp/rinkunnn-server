@@ -40,7 +40,7 @@
 			<script src="/assets/js/main.js"></script>
 <div class="main">
 
-<h1>掲示板よ</h1>
+<h1>掲示板</h1>
 
 <form method="POST" action="<?php print($_SERVER['PHP_SELF']) ?>">
 <p>ニックネーム</p>
@@ -60,7 +60,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 readData();
 
 function readData(){
-    $keijban_file = './date.txt';
+    $keijban_file = '/var/www/html/date/掲示板/date.txt';
 
     $fp = fopen($keijban_file, 'rb');
 
@@ -90,7 +90,7 @@ function writeData(){
     $data = $data."<p>内容:</p>";
     $data = $data."<p>".$contents."</p>";
 
-    $keijban_file = './date.txt';
+    $keijban_file = '/var/www/html/date/掲示板/date.txt';
 
     $fp = fopen($keijban_file, 'ab');
 
