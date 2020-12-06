@@ -45,6 +45,7 @@
 		$name3 = $_POST["video_k"];
 		$name4 = $_POST["music_k"];
         if(isset($_POST["movie_l"])) {
+		chmod("/youtube/",0777);
 		exec("rm $name2.$name3");
 		exec("youtube-dl -f 22 --merge-output-format $name3 $name1 -o '$name2.$name3'");
 		header( "location: https://rinkunnn.ddo.jp/youtube/$name2.$name3");
