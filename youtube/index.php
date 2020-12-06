@@ -45,9 +45,9 @@
 		$name3 = $_POST["video_k"];
 		$name4 = $_POST["music_k"];
         if(isset($_POST["movie_l"])) {
-		header( "Location: https://rinkunnn.ddo.jp/youtube/$name2.$name3");
 		system("rm $name2.$name3");
 		system("youtube-dl -f 22 --merge-output-format $name3 $name1 -o '$name2.$name3'");
+		header( "Location: https://rinkunnn.ddo.jp/youtube/$name2.$name3");
 	}
 	if(isset($_POST["movie_d"])) {
                 system("rm $name2.$name3");
@@ -63,7 +63,6 @@
 		if(isset($_POST["music"])) {
 		system("rm $name2.$name4");
 		system("youtube-dl $name1 -x --audio-format $name4 -o '$name2.$name4'");
-		sleep(5)
 		header( "location: https://rinkunnn.ddo.jp/youtube/$name2.$name4");
     }
         if(isset($_POST["music_d"])) {
