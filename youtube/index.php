@@ -39,6 +39,17 @@
 			<script src="/assets/js/util.js"></script>
 			<script src="/assets/js/main.js"></script>
 <div class="main">
+<form action="index.php" method="POST">
+	<h1>YouTubeダウンローダー1.0</h1>
+	<p>YouTubeのURL：<input type="text" name="user_name"></p>
+	<p>ファイル名の指定 日本語・空白非対応：<input type="text" name="password" value="youtube_movie"></p>
+	<p>動画の拡張子の指定：<input type="text" name="video_k" value="mp4"></p>
+	<p>音楽の拡張子の指定：<input type="text" name="music_k" value="mp3"></p>
+	<input type="submit" name="movie_l" value="動画に変換">
+	<input type="submit" name="movie_d" value="動画をダウンロード">
+        <input type="submit" name="music" value="音楽に変換">
+        <input type="submit" name="music_d" value="音楽をダウンロード">
+</form>
 <?php
 		$name1 = $_POST["user_name"];
 		$name2 = $_POST["password"];
@@ -78,18 +89,6 @@
                 readfile("$file_path1");
         }
 ?>
-
-<form action="index.php" method="POST">
-	<h1>YouTubeダウンローダー1.0</h1>
-	<p>YouTubeのURL：<input type="text" name="user_name"></p>
-	<p>ファイル名の指定 日本語・空白非対応：<input type="text" name="password" value="youtube_movie"></p>
-	<p>動画の拡張子の指定：<input type="text" name="video_k" value="mp4"></p>
-	<p>音楽の拡張子の指定：<input type="text" name="music_k" value="mp3"></p>
-	<input type="submit" name="movie_l" value="動画に変換">
-	<input type="submit" name="movie_d" value="動画をダウンロード">
-        <input type="submit" name="music" value="音楽に変換">
-        <input type="submit" name="music_d" value="音楽をダウンロード">
-</form>
 </div>
 </body>
 </html>
