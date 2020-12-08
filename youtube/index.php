@@ -89,7 +89,7 @@
                 readfile("$file_path1");
         }
 ?>
-<iframe src="https://m.youtube.com" width="600" height="400"></iframe>
+<iframe src="https://www.youtube.com/" width=600vw></iframe>
 </div>
 </body>
 </html>
