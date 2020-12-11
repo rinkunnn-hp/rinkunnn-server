@@ -59,7 +59,7 @@
 		chmod("/youtube/",0777);
 		exec("rm $name2.$name3");
 		exec("youtube-dl -f 22 --merge-output-format $name3 $name1 -o '$name2.$name3'");
-                echo"<video class=video src=$name2.$name3controls></video>";
+		header( "location: https://rinkunnn.ddo.jp/youtube/$name2.$name4");
 	}
 	if(isset($_POST["movie_d"])) {
                 exec("rm $name2.$name3");
