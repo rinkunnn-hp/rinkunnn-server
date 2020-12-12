@@ -53,7 +53,7 @@
             header("Location: top.php");
             exit;
         }
-        if ($_POST['email'] == 'rinkun2078@gmail.com' && $_POST['password'] == 'zd471605'){
+        if ($_POST['email'] == 'rinkun2078@gmail.com' && $_POST['password'] == '2078'){
             $_SESSION["USER"] = 'オーナー';
             header("Location: /コミット.php");
             exit;
@@ -70,7 +70,7 @@
         }
        else {
             // ⑤
-            $message = 'メールアドレスかパスワードが間違っています。';
+            $message = 'メールアドレスかパスワードが間違っています。乙。';
  }
     }
 
