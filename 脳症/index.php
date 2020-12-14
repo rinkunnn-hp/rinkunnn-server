@@ -64,6 +64,7 @@
       
       if(isset($_POST["rm"])) {
           exec("rm" . $rm-name);
+      }
       ?></p>
   </form>
 </div>
