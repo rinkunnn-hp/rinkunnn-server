@@ -4,6 +4,6 @@ if($ggg == 1680);
     echo($ggg + 123);
     exit;
 else{
-echo(121212121);
+echo("121212121");
 }
 ?>
