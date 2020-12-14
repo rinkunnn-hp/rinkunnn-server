@@ -1,7 +1,7 @@
 <?php
 $fgf = 32323233232
 
-echo("っく" . $fgf)
+echo("っく" . $fgf);
 
 
 php?>
