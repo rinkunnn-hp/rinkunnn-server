@@ -72,6 +72,7 @@ if (!isset($_SESSION['USER'])) {
     header('Location: index.php');
     exit;
 }
+	    ?>
   </form>
 </div>
 </div>
