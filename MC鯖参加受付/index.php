@@ -43,16 +43,16 @@
 
 
 <div class="main">
-<form method="post" action="index.php">
-	<h1>友達サーバー</h1>
-	<p>友達サーバーは統合版もjava版も入れるから安心してね。<br>でもルールが存在するから注意してね。<br>1.荒らさない　　当たり前<br>2.アドレスを人に教えない　　正直教えたところで入れないんですけどね<br>3.サーバー内を撮影するをしない　　その他サーバー内や情報をネットにさらすことは禁止です
-	<br><input type="submit" nane="discord" value="Discordに参加">
 <?php
         if(isset($_POST['discord'])){
 	    header('Location: https://discord.gg/ywvSH74FEY');
             exit;
         }
 ?>
+<form method="post" action="index.php">
+	<h1>友達サーバー</h1>
+	<p>友達サーバーは統合版もjava版も入れるから安心してね。<br>でもルールが存在するから注意してね。<br>1.荒らさない　　当たり前<br>2.アドレスを人に教えない　　正直教えたところで入れないんですけどね<br>3.サーバー内を撮影するをしない　　その他サーバー内や情報をネットにさらすことは禁止です
+	<br><input type="submit" nane="discord" value="Discordに参加">
 </div>
 
 </body>
