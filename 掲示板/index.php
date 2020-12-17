@@ -69,7 +69,7 @@ function readData(){
             while (!feof($fp)) {
                 $buffer = fgets($fp);
                 print($buffer);
-		exec("cp ./style ./".$_POST['personal_name']);
+		exec("cp -r ./style ./".$personal_name);
             }
 
             flock($fp, LOCK_UN);
@@ -89,7 +89,8 @@ function writeData(){
     $data = "<hr>";
     $data = $data."<p>掲示板の名前:".$personal_name."</p>";
     $data = $data."<p>URL</p>";
-    $data = $data."<p>https://rinkunnn.ddo.jp/掲示板/".$contents."</p>";
+    $data = $data."<p>http://34.83.101.94//掲示板/".$personal_name."</p>";
+    $data = $data."<p>内容<br>".$contents."</p>";
 
     $keijban_file = './date.txt';
 
