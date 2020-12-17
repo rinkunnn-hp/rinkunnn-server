@@ -49,7 +49,7 @@
 	<br><input type="submit" nane="discord" value="Discordに参加">
 <?php
         if(isset($_POST['discord'])){
-            header("Location: https://discord.gg/ywvSH74FEY");
+	    header('Location: https://discord.gg/ywvSH74FEY');
             exit;
         }
 ?>
