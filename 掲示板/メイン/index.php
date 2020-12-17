@@ -110,6 +110,16 @@ function writeData(){
 }
 
 ?>
+	
+<?php
+ 
+session_start();
+ 
+//ログイン済みかを確認
+if (!isset($_SESSION['USER'])) {
+    header('Location: index.php');
+    exit;
+}
 </div>
 </body>
 </html>
