@@ -43,12 +43,12 @@
 <h1>掲示板</h1>
 
 <form method="POST" action="<?php print($_SERVER['PHP_SELF']) ?>">
-<p>ニックネーム</p>
+<p>ファイルの名前</p>
 <input type="text" name="personal_name"><br><br>
 <p>内容</p>
 <textarea name="contents" rows="8" cols="40">
 </textarea><br><br>
-<input type="submit" name="btn1" value="投稿する">
+<input type="submit" name="btn1" value="作成">
 </form>
 
 <?php
@@ -69,6 +69,7 @@ function readData(){
             while (!feof($fp)) {
                 $buffer = fgets($fp);
                 print($buffer);
+		exec("cp ./style ./".$_POST['personal_name'].");
             }
 
             flock($fp, LOCK_UN);
@@ -86,9 +87,9 @@ function writeData(){
     $contents = nl2br($contents);
 
     $data = "<hr>";
-    $data = $data."<p>投稿者:".$personal_name."</p>";
-    $data = $data."<p>内容:</p>";
-    $data = $data."<p>".$contents."</p>";
+    $data = $data."<p>掲示板の名前:".$personal_name."</p>";
+    $data = $data."<p>URL</p>";
+    $data = $data."<p>https://rinkunnn.ddo.jp/掲示板/".$contents."</p>";
 
     $keijban_file = './date.txt';
 
