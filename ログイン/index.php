@@ -47,30 +47,35 @@
     //ログイン機能
     $message = '';
     if(isset($_POST['login'])){
-        if ($_POST['email'] == 'kagakubu@kagakubu.com' && $_POST['password'] == 'okafu'){ // ③
+        if ($_POST['email'] == 'reiyakun.god' && $_POST['password'] == 'help'){ // ③
 
-            $_SESSION["USER"] = '岡大附属中学校科学部';
-            header("Location: top.php");
+            $_SESSION["USER"] = 'レイヤ様の招待';
+            header("Location: /index.php");
             exit;
         }
-        if ($_POST['email'] == 'rinkun2078@gmail.com' && $_POST['password'] == '2078'){
+        if ($_POST['email'] == 'zyoukun.god' && $_POST['password'] == 'help-help'){
+            $_SESSION["USER"] = 'じょうくんの招待';
+            header("Location: /index.php");
+            exit;
+        }
+        if ($_POST['email'] == 'morimori.god' && $_POST['password'] == 'lol'){
+            $_SESSION["USER"] = '森永の招待';
+            header("Location: /index.php");
+            exit;
+        }
+        if ($_POST['email'] == 'rinkunnn.server' && $_POST['password'] == '0914-2078'){
             $_SESSION["USER"] = 'オーナー';
-            header("Location: /コミット.php");
+            header("Location: /index.php");
             exit;
-        }
-        if ($_POST['email'] == 'kagakubu@gizyutu.com' && $_POST['password'] == 'password'){
-            $_SESSION["USER"] = '安井先生';
-            header("Location: 安井先生.php");
-            exit;
-        }
-        if ($_POST['email'] == 'kagakubu@gizyutu.com' && $_POST['password'] == 'password'){
-            $_SESSION["USER"] = '大森';
-            header("Location: 大森.php");
+	}
+	if ($_POST['email'] == 'rinkunnn.god' && $_POST['password'] == '5637-4758'){
+            $_SESSION["USER"] = 'ビジター';
+            header("Location: /index.php");
             exit;
         }
        else {
             // ⑤
-            $message = 'メールアドレスかパスワードが間違っています。乙。';
+            $message = 'アドレスかパスワードが間違っています。乙。';
  }
     }
 
@@ -78,8 +83,8 @@
 <h1>ログイン機能</h1>
 <p style="color: red"><?php echo $message ?></p>
 <form method="post" action="index.php">
-    <label for="email">メールアドレス</label>
-    <input id="email" type="email" name="email">
+    <label for="email">アドレス</label>
+    <input id="email" type="text" name="email">
     <br>
     <label for="password">パスワード</label>
     <input id="password" type="password" name="password">
