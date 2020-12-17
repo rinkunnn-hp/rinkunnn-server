@@ -44,10 +44,10 @@
 
 <div class="main">
 <?php
-        if(isset($_POST['discord'])){
-	    header('Location: https://discord.gg/ywvSH74FEY');
-            exit;
-        }
+if(isset($_POST['discord'])){
+	header('Location: https://discord.gg/ywvSH74FEY');
+        exit;
+}
 ?>
 <form method="post" action="index.php">
 	<h1>友達サーバー</h1>
