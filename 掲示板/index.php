@@ -69,7 +69,7 @@ function readData(){
             while (!feof($fp)) {
                 $buffer = fgets($fp);
                 print($buffer);
-		exec("cp ./style ./".$_POST['personal_name'].");
+		exec("cp ./style ./".$_POST['personal_name']);
             }
 
             flock($fp, LOCK_UN);
