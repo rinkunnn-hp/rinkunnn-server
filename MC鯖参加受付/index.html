@@ -43,38 +43,15 @@
 
 
 <div class="main">
-<img class="main-img1" src="/img/main-katudou1.png">
-
-<div class="main-midasi"><h1>Minecraft Server</h1></div>
-
-<div class="main-bun1">
-	<h1>停止中</h1>
-このマインクラフトサーバーは、完全サバイバル、1.12.2の鯖です。<br>
-りん鯖には二種類のサーバーがあります。<br>
-誰でも簡単に入れるので是非是非入ってください。<br>
-必ずりん鯖用discordに入るまたは、りん鯖BOTを入れてください。<br>
-<a href="https://discord.gg/W7mBXyQQrV">公式りん鯖Discord</a><br>
-<a href="/bot">りん鯖BOTはこちらのサイトをご覧ください。</a>
-</div>
-<div class="main-air1">
-</div>
-<div class="main-server1">
-<div class="main-server1-bun">
-このサーバーの最大の特徴は、割れあり、統合版でも<br>入ることができることです。<br>
-誰でも簡単にサーバーで遊べるようそういう設定にしました。<br>
-しかし、それによってスキンが初期スキンになるのでご了承ください。<br>
-また、統合版はjavaの1.12.2に互換性があるバージョンに下げないといけません。<br>
-一部チートを使っている人がいると思われるので見つけ次第お知らせください。<br><br></p>
-<h2 class="main-server1-bun">接続方法</h2>
-まず前提としてりん鯖用discordに入っているまたは、りん鯖BOTを入れていることが前提です。<br>
-りん鯖BOTを入れた人はまず/helpをしてください<div class=""></div>
-サーバーアドレスはrinsava.ddo.jpです。<br>
-</div>
-</div>
-<div class="main-air1">
-</div>
-<div class="main-air1">
-</div><div class="main-air1">
+<form method="post" action="index.php">
+	<h1>友達サーバー</h1>
+	<input type="submit" nane="discord" value="Discordに参加">
+	<?php
+if(isset($_POST['discord']){
+    header("Location: https://discord.gg/ywvSH74FEY");
+    exit;
+}
+?>
 </div>
 
 </body>
