@@ -50,27 +50,27 @@
         if ($_POST['email'] == 'reiyakun.god' && $_POST['password'] == 'help'){ // ③
 
             $_SESSION["USER"] = 'レイヤ様の招待';
-            header("Location: /index.php");
+            header("Location: /");
             exit;
         }
         if ($_POST['email'] == 'zyoukun.god' && $_POST['password'] == 'help-help'){
             $_SESSION["USER"] = 'じょうくんの招待';
-            header("Location: /index.php");
+            header("Location: /");
             exit;
         }
         if ($_POST['email'] == 'morimori.god' && $_POST['password'] == 'lol'){
             $_SESSION["USER"] = '森永の招待';
-            header("Location: /index.php");
+            header("Location: /");
             exit;
         }
         if ($_POST['email'] == 'rinkunnn.server' && $_POST['password'] == '0914-2078'){
             $_SESSION["USER"] = 'オーナー';
-            header("Location: /index.php");
+            header("Location: /");
             exit;
 	}
 	if ($_POST['email'] == 'rinkunnn.god' && $_POST['password'] == '5637-4758'){
             $_SESSION["USER"] = 'ビジター';
-            header("Location: /index.php");
+            header("Location: /");
             exit;
         }
        else {
