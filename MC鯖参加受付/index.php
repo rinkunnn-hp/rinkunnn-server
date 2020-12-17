@@ -45,7 +45,7 @@
 <div class="main">
 <?php
 if(isset($_POST['discord'])) {
-    header('Location: /');
+    header('Location: http://discord.gg/ywvSH74FEY');
     echo"test";
 }
 ?>
