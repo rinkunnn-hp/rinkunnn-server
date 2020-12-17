@@ -45,8 +45,8 @@
 <div class="main">
 <?php
 if(isset($_POST['discord'])) {
-	header('Location: https://rinkunnn.ddo.jp');
-        echo"test";
+    header('Location: https://rinkunnn.ddo.jp');
+    echo"test";
 }
 ?>
 <form method="post" action="index.php">
