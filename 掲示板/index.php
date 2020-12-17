@@ -122,6 +122,7 @@ if (!isset($_SESSION['USER'])) {
     header('Location: index.php');
     exit;
 }
+	?>
 </div>
 </body>
 </html>
