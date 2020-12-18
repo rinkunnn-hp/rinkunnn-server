@@ -50,7 +50,7 @@ if(isset($_POST['discord'])) {
 }
 ?>
 		<h1>友達サーバー</h1>
-	<p>友達サーバーは統合版もjava版も入れるから安心してね。<br>ルール<br>1.荒らさない<br>2.アドレスを人に教えない<br>3.サーバー内を撮影するをしない　　その他サーバー内や情報をネットにさらすことは禁止です
+	<p>友達サーバーは統合版もjava版も入れるから安心してね。<br>ルール<br>1.荒らさない<br>2.アドレスを人に教えない<br>3.サーバー内るをしない　<br>その他サーバー内や情報をネットにさらすことは禁止です
 
 <form method="post" action="index.php">
 <br><br><br><input type="submit" name="discord" value="Discordに参加">
