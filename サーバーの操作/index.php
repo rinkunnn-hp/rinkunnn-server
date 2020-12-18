@@ -45,11 +45,20 @@
 <div class="main">
 <?php
 if(isset($_POST['main-start'])) {
-    exec"screen -S main java -Xmx1024M -server -jar Geyser.jar nogui";
+    exec("screen -S main java -Xmx1024M -server -jar Geyser.jar nogui");
     echo"起動しました";
 }
-if(isset($_POST['main-st'])) {
+if(isset($_POST['main-stop'])) {
     exec"screen -S main -X stuff 'stop\015'";
+    echo"停止しました";
+}
+if(isset($_POST['mini-start'])) {
+    exec("cd mini-start")
+    exec("screen -S mini java -Xmx1024M -server -jar Geyser.jar nogui");
+    echo"起動しました";
+}
+if(isset($_POST['mini-stop'])) {
+    exec"screen -S mini -X stuff 'stop\015'";
     echo"停止しました";
 }
 ?>
