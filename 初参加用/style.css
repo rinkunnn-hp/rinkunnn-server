@@ -1,0 +1,12 @@
+.main {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+    .main-img1 {
+        height: 500px;
+        width: 98vw;
+        object-fit: cover;
+    }
