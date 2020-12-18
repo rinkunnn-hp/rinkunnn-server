@@ -49,7 +49,7 @@ if(isset($_POST['main-start'])) {
     echo"起動しました";
 }
 if(isset($_POST['main-stop'])) {
-    exec"screen -S main -X stuff 'stop\015'";
+    exec("screen -S main -X stuff 'stop\015'");
     echo"停止しました";
 }
 if(isset($_POST['mini-start'])) {
@@ -58,7 +58,7 @@ if(isset($_POST['mini-start'])) {
     echo"起動しました";
 }
 if(isset($_POST['mini-stop'])) {
-    exec"screen -S mini -X stuff 'stop\015'";
+    exec("screen -S mini -X stuff 'stop\015'");
     echo"停止しました";
 }
 ?>
