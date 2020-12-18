@@ -45,11 +45,11 @@
 <div class="main">
 <?php
 if(isset($_POST['main-start'])) {
-    exec"screen -S java -Xmx1024M -server -jar Geyser.jar nogui";
+    exec"screen -S main java -Xmx1024M -server -jar Geyser.jar nogui";
     echo"起動しました";
 }
 if(isset($_POST['main-st'])) {
-    exec"screen -S $SCREEN_NAME -X stuff 'stop\015'";
+    exec"screen -S main -X stuff 'stop\015'";
     echo"停止しました";
 }
 ?>
