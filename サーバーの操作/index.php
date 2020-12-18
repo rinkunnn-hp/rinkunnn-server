@@ -53,7 +53,7 @@ if(isset($_POST['main-stop'])) {
     echo"停止しました";
 }
 if(isset($_POST['mini-start'])) {
-    exec("cd mini-start")
+    exec("cd mini-start");
     exec("screen -S mini java -Xmx1024M -server -jar Geyser.jar nogui");
     echo"起動しました";
 }
