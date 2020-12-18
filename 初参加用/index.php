@@ -55,6 +55,16 @@ if(isset($_POST['discord'])) {
 <form method="post" action="index.php">
 <br><br><br><input type="submit" name="discord" value="Discordに参加">
 	</from>
+<?php
+ 
+session_start();
+ 
+//ログイン済みかを確認
+if (!isset($_SESSION['USER'])) {
+    header('Location: index.php');
+    exit;
+}
+	?>
 </div>
 
 </body>
