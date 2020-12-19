@@ -61,7 +61,7 @@ session_start();
  
 //ログイン済みかを確認
 if (!isset($_SESSION['USER'])) {
-    header('Location: /index.php');
+    header('Location: /');
     exit;
 }
 	?>
